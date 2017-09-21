@@ -782,7 +782,28 @@
   :ets.new(__MODULE__, [:named_table])
   GenServer.start_link(__MODULE__, nil, [])
   ```
+* <a name="add-blank-line-after-multiline-assignment"></a>
+  Add a blank line after a multiline assignment as a
+  visual cue that the assignment is 'over'.
+  <sup>[[link](#add-blank-line-after-multiline-assignment)]</sup>
 
+  ```elixir
+  # bad
+  some_string =
+    "Hello"
+    |> String.downcase()
+    |> String.strip()
+  another_string <> some_string
+
+  # good
+  some_string =
+    "Hello"
+    |> String.downcase()
+    |> String.strip()
+
+  another_string <> some_string
+  ```
+ 
 ### Regular Expressions
 
 * <a name="pattern-matching-over-regexp"></a>
