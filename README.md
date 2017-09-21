@@ -512,7 +512,7 @@
   |> decode()
   ```
 * <a name="blank-line-after-multiline-assignment"></a>
-  Add a blank line after a multiline assignment as a
+  Add a blank line between a multiline assignment and next expression as a
   visual cue that the assignment is 'over'.
   <sup>[[link](#blank-line-after-multiline-assignment)]</sup>
 
