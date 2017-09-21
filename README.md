@@ -782,10 +782,10 @@
   :ets.new(__MODULE__, [:named_table])
   GenServer.start_link(__MODULE__, nil, [])
   ```
-* <a name="add-blank-line-after-multiline-assignment"></a>
+* <a name="blank-line-after-multiline-assignment"></a>
   Add a blank line after a multiline assignment as a
   visual cue that the assignment is 'over'.
-  <sup>[[link](#add-blank-line-after-multiline-assignment)]</sup>
+  <sup>[[link](#blank-line-after-multiline-assignment)]</sup>
 
   ```elixir
   # bad
