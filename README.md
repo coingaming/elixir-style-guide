@@ -511,7 +511,28 @@
   |> String.strip()
   |> decode()
   ```
+* <a name="blank-line-after-multiline-assignment"></a>
+  Add a blank line after a multiline assignment as a
+  visual cue that the assignment is 'over'.
+  <sup>[[link](#blank-line-after-multiline-assignment)]</sup>
 
+  ```elixir
+  # Bad
+  some_string =
+    "Hello"
+    |> String.downcase()
+    |> String.strip()
+  another_string <> some_string
+
+  # Good
+  some_string =
+    "Hello"
+    |> String.downcase()
+    |> String.strip()
+
+  another_string <> some_string
+  ```
+  
 ## Linting
 
 * <a name="pipeline-operator"></a>
@@ -781,27 +802,6 @@
   # Good
   :ets.new(__MODULE__, [:named_table])
   GenServer.start_link(__MODULE__, nil, [])
-  ```
-* <a name="blank-line-after-multiline-assignment"></a>
-  Add a blank line after a multiline assignment as a
-  visual cue that the assignment is 'over'.
-  <sup>[[link](#blank-line-after-multiline-assignment)]</sup>
-
-  ```elixir
-  # bad
-  some_string =
-    "Hello"
-    |> String.downcase()
-    |> String.strip()
-  another_string <> some_string
-
-  # good
-  some_string =
-    "Hello"
-    |> String.downcase()
-    |> String.strip()
-
-  another_string <> some_string
   ```
  
 ### Regular Expressions
